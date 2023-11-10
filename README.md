@@ -3,9 +3,7 @@ I created a bash script to install Elasticsearch, Kibana and Filebeat on a Debia
 
 Once installed, by default, they will be listening on localhost and their associated ports.
 
-Elasticsearch ```127.0.0.1:9200```
-
-Kibana ```127.0.0.1:5601```
+Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
 
 **_FIRST: Create a local copy of the script._**
 
