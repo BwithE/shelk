@@ -22,7 +22,7 @@ The beats will be able to forward nmap results, airodump-ng (beacons & probes), 
 
 
 **_To create specific```filebeat.yml``` for data injestion, we need to select the menu on the left and select ```Machine learning```_**
-<img width="600" alt="machinelearning" src="https://github.com/BwithE/shELK/assets/144924113/ddcb5c59-4cc4-4f04-90e2-ad32e476a54d">
+<img width="1680" alt="machinelearning" src="https://github.com/BwithE/shELK/assets/144924113/ddcb5c59-4cc4-4f04-90e2-ad32e476a54d">
 
 **_Under "Import Data" select ```Select File```_**
 <img width="1680" alt="importdata" src="https://github.com/BwithE/shELK/assets/144924113/dcdfdabd-c8d7-4547-8da6-268fb0d77e59">
