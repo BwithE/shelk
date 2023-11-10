@@ -36,7 +36,7 @@ Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
 
 <img width="1680" alt="fileselect" src="https://github.com/BwithE/shELK/assets/144924113/96ece58b-5841-44f5-b044-aff1cddec4d6">
 
-**_For this example, I will use nmap results on my localhost VM._**
+**_For this example, I will use nmap results from my localhost machine. I used @LaconicWolf xml2csv.py script to convert my nmap.xml into a ".csv" so Elasticsearch can analyze it._**
 
 ![Screenshot 2023-11-10 at 3 11 48 PM](https://github.com/BwithE/shELK/assets/144924113/1d1a9c1f-3b51-4323-91fe-eb1cf2933ac2)
 
