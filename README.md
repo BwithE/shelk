@@ -1,5 +1,5 @@
 # Scripting and ELK.
-I created a bash script to install Elasticsearch and Kibana on a Debin based OS. 
+I created a bash script to install Elasticsearch, Kibana and Filebeat on a Debian based OS. 
 Once installed, by default, they will be listening on localhost.
 
 elasticsearch : 9200
