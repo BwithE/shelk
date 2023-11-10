@@ -53,6 +53,8 @@ Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
 ![Screenshot 2023-11-10 at 3 13 06 PM](https://github.com/BwithE/shELK/assets/144924113/445680a2-1329-44e7-9ff4-cddcb2cc067d)
 
 **_You will see something like the following. Copy those contents into your "/etc/filebeat/filebeat.yml"_**
+**_This will allow all new "*.csv" files with the same format to be injested into Elasticsearch._**
+
 
 ![Screenshot 2023-11-10 at 3 13 17 PM](https://github.com/BwithE/shELK/assets/144924113/5c1e81bf-5730-403b-98a7-80569eeba0fe)
 
