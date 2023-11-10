@@ -18,7 +18,7 @@ clear
 echo "Installing Filebeat"
 wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.17.9-amd64.deb
 sudo dpkg -i filebeat-7.17.9-amd64.deb
-sudo rm -f filebeat-7.17.9-amd64.deb
+sudo rm -f filebeat-*.deb
 
 clear
 # checking if elasticsearch is running on default settings
