@@ -19,4 +19,4 @@ The beats will be able to forward nmap results, airodump-ng (beacons & probes), 
 
 ```sudo bash ello-stack.sh```
 
-
+**_Next, we can go to 127.0.0.1:5601 to see Kibana _**
