@@ -41,11 +41,11 @@ Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
 
 ![Screenshot 2023-11-10 at 3 11 48 PM](https://github.com/BwithE/shELK/assets/144924113/1d1a9c1f-3b51-4323-91fe-eb1cf2933ac2)
 
-**_If I scroll down, I can see some of the results that are listed._**
+**_If I scroll down, I can see some of the results that are listed. Make sure to "import"._**
 
 ![Screenshot 2023-11-10 at 3 12 11 PM](https://github.com/BwithE/shELK/assets/144924113/2ca7b3d1-ec6e-416b-8067-771c7d4c1665)
 
-**_Next, we can name the INDEX "home-namp"_**
+**_Next, we can name the INDEX "home-namp" and then "import"._**
 
 ![Screenshot 2023-11-10 at 3 12 50 PM](https://github.com/BwithE/shELK/assets/144924113/74e52053-3df8-46f9-be31-eafc76d3a7b5)
 
