@@ -1,4 +1,4 @@
-# Bash script to install Elasticsearch, Kibana and other beats
+# Bash script to install Elasticsearch, Kibana and Filebeat.
 This script will install Elasticsearch, Kibana and Filebeat.
 
 The beats will be able to forward nmap results, airodump-ng (beacons & probes), and kismet GPS data.
