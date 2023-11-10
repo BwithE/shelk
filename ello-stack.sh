@@ -1,8 +1,4 @@
 #!/bin/bash
-# The purpose of this script is to install Elasticsearch and Kibana version 7.17.9
-# It keeps the default settings so you can hit elastic at 127.0.0.1:9200
-# and then hit kibana @ 127.0.0.1:5601
-
 clear
 
 echo "Installing and starting Elasticsearch."
@@ -17,6 +13,12 @@ wget https://artifacts.elastic.co/downloads/kibana/kibana-7.17.9-amd64.deb
 sudo dpkg -i kibana-7.17.9-amd64.deb
 sudo rm -f kibana-*.deb
 sudo systemctl start kibana
+
+clear
+echo "Installing Filebeat"
+wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.17.9-amd64.deb
+sudo dpkg -i filebeat-7.17.9-amd64.deb
+sudo rm -f filebeat-7.17.9-amd64.deb
 
 clear
 # checking if elasticsearch is running on default settings
@@ -36,3 +38,11 @@ elif curl -s "$kibanacurl" | grep -q "Kibana server is not ready yet"; then
 else
     echo "Kibana errored out somewhere"
 fi
+
+# Come back to clean this up
+if ls -l /etc/filebeat | grep filebeat.yml; then
+    echo "Filebeat is installed, but not running"
+else
+    echo "Filebeat is not installed."
+fi
+
