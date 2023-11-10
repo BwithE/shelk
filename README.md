@@ -17,7 +17,7 @@ Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
 
 ```sudo ./ello-stack.sh``` **_or_** ```sudo bash ello-stack.sh```
 
-**_Next, we can go to ```127.0.0.1:5601``` to see Kibana._**
+**_Next, in a web-browser, we can go to ```127.0.0.1:5601``` to see Kibana._**
 
 **_Select ```Explore on my own```_**
 ![explore](https://github.com/BwithE/shELK/assets/144924113/1a71dacb-8382-4933-98c1-33b4f2610f74)
