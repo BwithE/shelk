@@ -5,6 +5,7 @@ echo "Installing and starting Elasticsearch."
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.9-amd64.deb
 sudo dpkg -i elasticsearch-7.17.9-amd64.deb
 sudo rm -f elasticsearch-*.deb
+sudo systemctl daemon-reload
 sudo systemctl start elasticsearch
 
 clear
@@ -18,7 +19,8 @@ clear
 echo "Installing Filebeat"
 wget https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.17.9-amd64.deb
 sudo dpkg -i filebeat-7.17.9-amd64.deb
-sudo rm -f filebeat-*.deb
+sudo rm -f filebeat-7.17.9-amd64.deb
+
 
 clear
 # checking if elasticsearch is running on default settings
@@ -39,10 +41,14 @@ else
     echo "Kibana errored out somewhere"
 fi
 
-# Come back to clean this up
-if ls -l /etc/filebeat | grep filebeat.yml; then
+# checks to see if filebeat was installed
+if [ -e /etc/filebeat/filebeat.yml  ]; then
     echo "Filebeat is installed, but not running"
 else
     echo "Filebeat is not installed."
 fi
+
+#### filebeat service location
+# /lib/systemd/system/filebeat.service
+# modify this file per each service you want to run
 
