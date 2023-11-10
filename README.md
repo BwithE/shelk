@@ -55,3 +55,7 @@ Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
 **_You will see something like the following. Copy those contents into your "/etc/filebeat/filebeat.yml"_**
 
 ![Screenshot 2023-11-10 at 3 13 17 PM](https://github.com/BwithE/shELK/assets/144924113/5c1e81bf-5730-403b-98a7-80569eeba0fe)
+
+**_FINALLY, we can go to the "Discover" tab and view our "home-nmap" results._**
+
+<img width="1680" alt="Screenshot 2023-11-10 at 3 29 00 PM" src="https://github.com/BwithE/shELK/assets/144924113/385b1e2d-a681-4f61-8642-47406051648b">
