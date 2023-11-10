@@ -1,5 +1,8 @@
 # Scripting and ELK.
-Scripting and Elasticsearch, Kibana.
+I created a bash script to install Elasticsearch and Kibana. 
+Once installed, by default, they will be listening on localhost.
+elasticsearch : 9200
+kibana : 5601
 
 **_FIRST: Create a local copy of the script._**
 
