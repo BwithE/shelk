@@ -1,7 +1,5 @@
 # Scripting and ELK.
-With a mix of powershell, python and bash scripting, we will install Elasticsearch, Kibana,  Filebeat, nmap, aircrack-ng and kismet.
-Filebeat will be able to forward nmap results, airodump-ng (beacons & probes), and kismet GPS data to Elasticsearch.
-With Kibana we will be able to create dashboards to visualize the data.
+Scripting and Elasticsearch, Kibana.
 
 **_FIRST: Create a local copy of the script._**
 
