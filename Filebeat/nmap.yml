@@ -1,0 +1,16 @@
+filebeat.inputs:
+- type: log
+  paths:
+  - '/home/kali/nmap/*.csv'
+  exclude_lines: ['^"?IP"?,"?Host"?,"?OS"?,"?Proto"?,"?Port"?,"?Service"?,"?Product"?']
+
+output.elasticsearch:
+  hosts: ["127.0.0.1:9200"]
+  index: "local-nmap"
+  pipeline: "local-nmap-pipeline"
+
+setup:
+  template.enabled: false
+  ilm.enabled: false
+  template.name: "local-nmap"
+  template.pattern: "local-nmap-pipeline"

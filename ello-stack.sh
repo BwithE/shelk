@@ -44,7 +44,6 @@ fi
 # checks to see if filebeat was installed
 if [ -e /etc/filebeat/filebeat.yml  ]; then
     echo "Filebeat is installed, but not running"
-
     #### filebeat service location
     # /lib/systemd/system/filebeat.service
 
@@ -57,7 +56,23 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     sudo mkdir /var/log/filebeat/nmap
     sudo mkdir /var/lib/filebeat/clients
     sudo mkdir /var/log/filebeat/clients
-    
+
+    # move the service beats into the required locations
+    sudo cp Services/*.service /lib/systemd/system/
+    sudo systemctl daemon-reload
+
 else
     echo "Filebeat is not installed."
 fi
+
+# Creating pipelines for specific data sets
+clear
+echo "Creating Pipelines." 
+bash Pipelines/*pipeline.sh
+
+# Moving filebeat conf files
+clear
+echo "Moving Filebeats.conf files"
+sudo cp Filebeat/*.yml /etc/filebeat/
+
+sudo systemctl start nmapbeat.service
