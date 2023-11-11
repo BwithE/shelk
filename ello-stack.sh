@@ -44,21 +44,20 @@ fi
 # checks to see if filebeat was installed
 if [ -e /etc/filebeat/filebeat.yml  ]; then
     echo "Filebeat is installed, but not running"
+
+    #### filebeat service location
+    # /lib/systemd/system/filebeat.service
+
+    # Creates the following directories for the beats we will create
+    sudo mkdir /var/lib/filebeat/arpscan
+    sudo mkdir /var/log/filebeat/arpscan
+    sudo mkdir /var/lib/filebeat/accesspoints
+    sudo mkdir /var/log/filebeat/accesspoints
+    sudo mkdir /var/lib/filebeat/nmap
+    sudo mkdir /var/log/filebeat/nmap
+    sudo mkdir /var/lib/filebeat/clients
+    sudo mkdir /var/log/filebeat/clients
+    
 else
     echo "Filebeat is not installed."
 fi
-
-#### filebeat service location
-# /lib/systemd/system/filebeat.service
-
-# Creates the following directories for the beats we will create
-#sudo mkdir /var/lib/filebeat/arpscan
-#sudo mkdir /var/log/filebeat/arpscan
-#sudo mkdir /var/lib/filebeat/accesspoints
-#sudo mkdir /var/log/filebeat/accesspoints
-#sudo mkdir /var/lib/filebeat/nmap
-#sudo mkdir /var/log/filebeat/nmap
-#sudo mkdir /var/lib/filebeat/clients
-#sudo mkdir /var/log/filebeat/clients
-
-
