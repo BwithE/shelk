@@ -3,6 +3,8 @@ We will be able to injest and visualize nmap scans, breakdown wireless beacons a
 
 The bash script ```ello-stack.sh``` will install Elasticsearch, Kibana and Filebeat on a NEW Debian based OS (PREFERABLY KALI). 
 
+The user name all the scripts use are ```kali``` and the location of all files and directories are ```/home/kali```
+
 It also creates the proper log and lib directories.
 
 Then it copies the modified **_"Filebeat.service"_** which splits into different services based off of data types.
