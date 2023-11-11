@@ -5,7 +5,7 @@ The bash script ```ello-stack.sh``` will install Elasticsearch, Kibana and Fileb
 
 The user name all the scripts use are ```kali``` and the location of all files and directories are ```/home/kali```
 
-It also creates the proper log and lib directories.
+It also creates the proper "log" and "lib" directories for the "Filebeat.services".
 
 Then it copies the modified **_"Filebeat.service"_** which splits into different services based off of data types.
 
