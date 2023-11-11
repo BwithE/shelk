@@ -1,7 +1,7 @@
 # Using ELK for Network RECON.
 We will be able to injest and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
 
-The bash script ```ello-stack.sh``` will install Elasticsearch, Kibana and Filebeat on a Debian based OS (PREFERABLY KALI). 
+The bash script ```ello-stack.sh``` will install Elasticsearch, Kibana and Filebeat on a NEW Debian based OS (PREFERABLY KALI). 
 
 It also creates the proper log and lib directories.
 
