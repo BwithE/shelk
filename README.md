@@ -34,40 +34,40 @@ Select "Explore on my own"
 
 ![1explore](https://github.com/BwithE/shELK/assets/144924113/415cc467-138f-4b79-b4f6-c853296ef53d)
 
-**_Select the drop down menu on the top left, and scroll all the way down to the bottom. Select "Stack Management"_**
+Select the drop down menu on the top left, and scroll all the way down to the bottom. Select "Stack Management"
 
 ![2](https://github.com/BwithE/shELK/assets/144924113/e8aadcbd-c934-4527-9830-2914c4aa76de)
 
 ![3](https://github.com/BwithE/shELK/assets/144924113/04807833-3d34-4411-a13d-6cbdeb2b001c)
 
-**_Select "Index Management" and notice we don't see anything! So, we can build some basic results by running the attached ```nmap.sh```_**
+Select "Index Management" and notice we don't see anything! So, we can build some basic results by running the attached ```nmap.sh```
 
 ![4](https://github.com/BwithE/shELK/assets/144924113/161b31c9-d803-4c67-8801-5871849b308b)
 
-**_Notice the location ```/home/kali/SHELK/Scripts/``` and I ran ```bash nmap.sh```. This will ask what IP address we want to scan, for example of this demonstration I used 127.0.0.1._**
+Notice the location ```/home/kali/SHELK/Scripts/``` and I ran ```bash nmap.sh```. This will ask what IP address we want to scan, for example of this demonstration I used 127.0.0.1
 
-**_I also want to mention the ```xml2csv.py``` belongs to @LaconicWolf. We will be using it to convert the nmap.xml data into a .csv format._**
+I also want to mention the ```xml2csv.py``` belongs to @LaconicWolf. We will be using it to convert the nmap.xml data into a .csv format.
 
 ![Screenshot (38)](https://github.com/BwithE/shELK/assets/144924113/c287bf1b-4ce8-4573-bec6-54531afbb046)
 
-**_After that scan has run, and placed the results in ```/home/kali/elk/nmap/*.csv``` the results should be automatically injested into elasticsearch. So, lets refresh our page, notice that we see ```local-nmap``` and a document count._**
+After that scan has run, and placed the results in ```/home/kali/elk/nmap/*.csv``` the results should be automatically injested into elasticsearch. So, lets refresh our page, notice that we see ```local-nmap``` and a document count.
 
 ![Screenshot (39)](https://github.com/BwithE/shELK/assets/144924113/29fedd77-381c-4f27-8ef7-47faab9656e5)
 
-**_Now we have to create an "Index Pattern" so Kibana can track down our data from the Index we just created._**
+Now we have to create an "Index Pattern" so Kibana can track down our data from the Index we just created.
 
 ![Screenshot (40)](https://github.com/BwithE/shELK/assets/144924113/d376274b-6837-4743-895c-6404d2cd0608)
 
 ![Screenshot (41)](https://github.com/BwithE/shELK/assets/144924113/d91e7329-6926-40e0-ad5f-4859064d7d41)
 
-**_Type out ```local-nmap``` and select ```@timestamp``` for the "Timestamp field. Then select "Create index pattern"_**
+Type out ```local-nmap``` and select ```@timestamp``` for the "Timestamp field. Then select "Create index pattern"
 
 ![Screenshot (42)](https://github.com/BwithE/shELK/assets/144924113/533861ad-c975-46bc-99b9-28e97a27e732)
 
-**_Open the hamburger menu again and select "Discover"_**
+Open the hamburger menu again and select "Discover"
 
 ![Screenshot (43)](https://github.com/BwithE/shELK/assets/144924113/8733ceff-09ba-4cec-babc-e41f0e52f0cd)
 
-**_FINALLY, We are succesful and can see our recent nmap scan results. On the left column, you can select specifc "Fields" and you will be able to search through the data in a cleaner, faster sense._**
+FINALLY, We are succesful and can see our recent nmap scan results. On the left column, you can select specifc "Fields" and you will be able to search through the data in a cleaner, faster sense.
 
 # I WILL UPLOAD MORE SNAPSHOTS AS I UPDATE THE DATA SETS AND SCRIPTS #
