@@ -41,5 +41,30 @@ FINALLY, we will injest an nmap scan into elastic to create dashboards in Kibana
 
 ![4](https://github.com/BwithE/shELK/assets/144924113/161b31c9-d803-4c67-8801-5871849b308b)
 
+**_Notice the location ```/home/kali/SHELK/Scripts/``` and I ran ```bash nmap.sh```. This will ask what IP address we want to scan, for example of this demonstration I used 127.0.0.1._**
 
-# I WILL UPLOAD MORE SNAPSHOTS SHORTLY #
+**_I also want to mention the ```xml2csv.py``` belongs to @LaconicWolf. We will be using it to convert the nmap.xml data into a .csv format._**
+
+![Screenshot (38)](https://github.com/BwithE/shELK/assets/144924113/c287bf1b-4ce8-4573-bec6-54531afbb046)
+
+**_After that scan has run, and placed the results in ```/home/kali/elk/nmap/*.csv``` the results should be automatically injested into elasticsearch. So, lets refresh our page, notice that we see ```local-nmap``` and a document count._**
+
+![Screenshot (39)](https://github.com/BwithE/shELK/assets/144924113/29fedd77-381c-4f27-8ef7-47faab9656e5)
+
+**_Now we have to create an "Index Pattern" so Kibana can track down our data from the Index we just created._**
+
+![Screenshot (40)](https://github.com/BwithE/shELK/assets/144924113/d376274b-6837-4743-895c-6404d2cd0608)
+
+![Screenshot (41)](https://github.com/BwithE/shELK/assets/144924113/d91e7329-6926-40e0-ad5f-4859064d7d41)
+
+**_Type out ```local-nmap``` and select ```@timestamp``` for the "Timestamp field. Then select "Create index pattern"_**
+
+![Screenshot (42)](https://github.com/BwithE/shELK/assets/144924113/533861ad-c975-46bc-99b9-28e97a27e732)
+
+**_Open the hamburger menu again and select "Discover"_**
+
+![Screenshot (43)](https://github.com/BwithE/shELK/assets/144924113/8733ceff-09ba-4cec-babc-e41f0e52f0cd)
+
+**_FINALLY, We are succesful and can see our recent nmap scan results. On the left column, you can select specifc "Fields" and you will be able to search through the data in a cleaner, faster sense._**
+
+# I WILL UPLOAD MORE SNAPSHOTS AS I UPDATE THE DATA SETS AND SCRIPTS #
