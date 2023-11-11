@@ -72,11 +72,12 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     sudo cp Filebeat/*.yml /etc/filebeat/
 
     # Creates the directories where data forwarded to ELK will be saved
-    sudo mkdir /home/kali/elk/
-    sudo mkdir /home/kali/elk/nmap
-    sudo mkdir /home/kali/elk/arp
-    sudo mkdir /home/kali/elk/ap
-    sudo mkdir /home/kali/elk/client
+    mkdir /home/kali/elk/
+    mkdir /home/kali/elk/nmap
+    mkdir /home/kali/elk/arp
+    mkdir /home/kali/elk/ap
+    mkdir /home/kali/elk/client
+    #sudo chown kali:kali
 
     # Starts the beat services
     sudo systemctl start nmapbeat.service
