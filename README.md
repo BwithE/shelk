@@ -13,7 +13,7 @@ Another script gets called to create the proper pipelines for the data sets.
 
 Then we copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```
 
-FINALLY, we will injest an nmap scan into elastic to create dashboards in Kibana.
+FINALLY, we will injest an nmap scan into Elasticsearch to create dashboards in Kibana.
 
 # Hands on Keyboards: 
 **_Create a local copy of the script._**
