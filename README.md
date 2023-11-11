@@ -15,7 +15,7 @@ Then we copy all the **_"filebeat conf files"_** get copied to **_"/etc/filebeat
 
 FINALLY, we will injest an nmap scan into elastic to create dashboards in Kibana.
 
-# FIRST: 
+# Hands on Keyboards: 
 **_Create a local copy of the script._**
 
 ```git clone https://github.com/bwithe/shELK```
