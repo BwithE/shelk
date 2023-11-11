@@ -8,7 +8,7 @@ Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
 
 **_FIRST: Create a local copy of the script._**
 
-```wget https://raw.githubusercontent.com/BwithE/shELK/main/ello-stack.sh```
+```git clone https://github.com/bwithe/shELK```
 
 **_Make the script executable:_**
 
