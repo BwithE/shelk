@@ -6,10 +6,6 @@ Along with the above, I modify the "Filebeat.service" to split into different se
 After ELK is installed, the script creates the proper files and directories for conf files, logging files, and services files.
 After that, we will injest an nmap scan into elastic to create dashboards in Kibana.
 
-Once installed, by default, they will be listening on localhost and their associated ports.
-
-Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
-
 **_FIRST: Create a local copy of the script._**
 
 ```git clone https://github.com/bwithe/shELK```
@@ -21,3 +17,5 @@ Elasticsearch ```127.0.0.1:9200``` && Kibana ```127.0.0.1:5601```
 **_Then run the script:_**
 
 ```sudo ./ello-stack.sh``` **_or_** ```sudo bash ello-stack.sh```
+
+# I WILL UPLOAD SNAPSHOTS SHORTLY #
