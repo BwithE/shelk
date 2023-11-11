@@ -1,6 +1,6 @@
-# Scripting and ELK.
+# Scripting and E(L)K.
 I created a bash script to install Elasticsearch, Kibana and Filebeat on a Debian based OS. (NO LOGSTASH)
-After ELK is installed, I injest an nmap scan into elastic to start collecting data.
+After E(L)K is installed, I injest an nmap scan into elastic to start collecting data.
 
 Once installed, by default, they will be listening on localhost and their associated ports.
 
