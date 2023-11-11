@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 curl -X PUT "127.0.0.1:9200/_ingest/pipeline/local-nmap-pipeline" -H 'Content-Type: application/json' -d'
 {
   "description": "nmap Pipeline",
