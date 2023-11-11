@@ -71,6 +71,13 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     echo "Moving Filebeats.conf files"
     sudo cp Filebeat/*.yml /etc/filebeat/
 
+    # Creates the directories where data forwarded to ELK will be saved
+    sudo mkdir /home/kali/elk/
+    sudo mkdir /home/kali/elk/nmap
+    sudo mkdir /home/kali/elk/arp
+    sudo mkdir /home/kali/elk/ap
+    sudo mkdir /home/kali/elk/client
+
     # Starts the beat services
     sudo systemctl start nmapbeat.service
     #sudo systemctl start apbeat.service
