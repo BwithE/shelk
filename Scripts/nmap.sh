@@ -11,5 +11,5 @@ python3 xml2csv.py -f scan -csv scans.csv
 rm -f scan
 
 # takes the nmap.csv and cuts down the fields and dumps it into a folder where elastic will look for data
-cat scans.csv | cut -d "," -f1,2,3,4,5,6,7 > /home/kali/nmap/nmap.csv
+cat scans.csv | cut -d "," -f1,2,3,4,5,6,7 > /home/kali/elk/nmap/nmap.csv
 rm -f scans.csv
