@@ -52,3 +52,13 @@ fi
 # /lib/systemd/system/filebeat.service
 # modify this file per each service you want to run
 
+sudo mkdir /var/lib/filebeat/arpscan
+sudo mkdir /var/log/filebeat/arpscan
+sudo mkdir /var/lib/filebeat/accesspoints
+sudo mkdir /var/log/filebeat/accesspoints
+sudo mkdir /var/lib/filebeat/nmap
+sudo mkdir /var/log/filebeat/nmap
+sudo mkdir /var/lib/filebeat/clients
+sudo mkdir /var/log/filebeat/clients
+
+
