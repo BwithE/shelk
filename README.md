@@ -11,7 +11,7 @@ Then it copies the modified **_"Filebeat.service"_** which splits into different
 
 Another script gets called to create the proper pipelines for the data sets.
 
-Then we copy all the **_"filebeat conf files"_** get copied to **_"/etc/filebeat/"_**
+Then we copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```_**
 
 FINALLY, we will injest an nmap scan into elastic to create dashboards in Kibana.
 
