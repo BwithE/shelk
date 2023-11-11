@@ -1,5 +1,6 @@
 # Using ELK for Network RECON.
-I created a bash script to install Elasticsearch, Kibana and Filebeat on a Debian based OS. (NO LOGSTASH)
+I created a bash script to install Elasticsearch, Kibana and Filebeat on a Debian based OS (PREFERABLY KALI).
+
 After ELK is installed, I injest an nmap scan into elastic.
 
 Once installed, by default, they will be listening on localhost and their associated ports.
