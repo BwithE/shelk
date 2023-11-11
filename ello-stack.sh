@@ -77,7 +77,8 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     mkdir /home/kali/elk/arp
     mkdir /home/kali/elk/ap
     mkdir /home/kali/elk/client
-    #sudo chown kali:kali
+    sudo chown kali:kali /home/kali/elk
+    sudo chown kali:kali /home/kali/elk/*
 
     # Starts the beat services
     sudo systemctl start nmapbeat.service
