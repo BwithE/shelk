@@ -30,17 +30,17 @@ Then run the script:
 
 Once the script is finishing running, you will be asked to open your web-browser and go to ```127.0.0.1:5601```
 
-Select "Explore on my own"
+Select **_"Explore on my own"_**
 
 ![1explore](https://github.com/BwithE/shELK/assets/144924113/415cc467-138f-4b79-b4f6-c853296ef53d)
 
-Select the drop down menu on the top left, and scroll all the way down to the bottom. Select "Stack Management"
+Select the drop down menu on the top left, and scroll all the way down to the bottom. Select **_"Stack Management"_**
 
 ![2](https://github.com/BwithE/shELK/assets/144924113/e8aadcbd-c934-4527-9830-2914c4aa76de)
 
 ![3](https://github.com/BwithE/shELK/assets/144924113/04807833-3d34-4411-a13d-6cbdeb2b001c)
 
-Select "Index Management" and notice we don't see anything! So, we can build some basic results by running the attached ```nmap.sh```
+Select **_"Index Management"_** and notice we don't see anything! So, we can build some basic results by running the attached ```nmap.sh```
 
 ![4](https://github.com/BwithE/shELK/assets/144924113/161b31c9-d803-4c67-8801-5871849b308b)
 
@@ -54,17 +54,17 @@ After that scan has run, and placed the results in ```/home/kali/elk/nmap/*.csv`
 
 ![Screenshot (39)](https://github.com/BwithE/shELK/assets/144924113/29fedd77-381c-4f27-8ef7-47faab9656e5)
 
-Now we have to create an "Index Pattern" so Kibana can track down our data from the Index we just created.
+Now we have to create an **_"Index Pattern"_** so Kibana can track down our data from the Index we just created.
 
 ![Screenshot (40)](https://github.com/BwithE/shELK/assets/144924113/d376274b-6837-4743-895c-6404d2cd0608)
 
 ![Screenshot (41)](https://github.com/BwithE/shELK/assets/144924113/d91e7329-6926-40e0-ad5f-4859064d7d41)
 
-Type out ```local-nmap``` and select ```@timestamp``` for the "Timestamp field. Then select "Create index pattern"
+Type out ```local-nmap``` and select ```@timestamp``` for the "Timestamp" field. Then select **_"Create index pattern"._**
 
 ![Screenshot (42)](https://github.com/BwithE/shELK/assets/144924113/533861ad-c975-46bc-99b9-28e97a27e732)
 
-Open the hamburger menu again and select "Discover"
+Open the hamburger menu again and select **_"Discover"._**
 
 ![Screenshot (43)](https://github.com/BwithE/shELK/assets/144924113/8733ceff-09ba-4cec-babc-e41f0e52f0cd)
 
