@@ -61,18 +61,33 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     sudo cp Services/*.service /lib/systemd/system/
     sudo systemctl daemon-reload
 
+    # Creating pipelines for specific data sets
+    clear
+    echo "Creating Pipelines." 
+    bash Pipelines/*pipeline.sh
+
+    # Moving filebeat conf files
+    clear
+    echo "Moving Filebeats.conf files"
+    sudo cp Filebeat/*.yml /etc/filebeat/
+
+    # Starts the beat services
+    sudo systemctl start nmapbeat.service
+    #sudo systemctl start apbeat.service
+    #sudo systemctl start arpbeat.service
+    #sudo systemctl start clientbeat.service
+
+    # Enables the listed services
+    sudo systemctl enable elasticsearch
+    sudo systemctl enable kibana
+    sudo systemctl enable nmapbeat.service
+    #sudo systemctl enable apbeat.service
+    #sudo systemctl enable clientbeat.service
+    #sudo systemctl enable arpbeat.service
+
 else
     echo "Filebeat is not installed."
 fi
 
-# Creating pipelines for specific data sets
 clear
-echo "Creating Pipelines." 
-bash Pipelines/*pipeline.sh
-
-# Moving filebeat conf files
-clear
-echo "Moving Filebeats.conf files"
-sudo cp Filebeat/*.yml /etc/filebeat/
-
-sudo systemctl start nmapbeat.service
+echo "Please open your browser and go to 127.0.0.1:5601"
