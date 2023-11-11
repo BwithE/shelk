@@ -16,21 +16,21 @@ Then we copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```
 FINALLY, we will injest an nmap scan into Elasticsearch to create dashboards in Kibana.
 
 # Hands on Keyboards: 
-**_Create a local copy of the script._**
+Create a local copy of the script.
 
 ```git clone https://github.com/bwithe/shELK```
 
-**_Make the script executable:_**
+Make the script executable:
 
 ```sudo chmod +x ello-stack.sh```
 
-**_Then run the script:_**
+Then run the script:
 
 ```sudo ./ello-stack.sh``` **_or_** ```sudo bash ello-stack.sh```
 
-**_Once the script is finishing running, you will be asked to open your web-browser and go to ```127.0.0.1:5601```_**
+Once the script is finishing running, you will be asked to open your web-browser and go to ```127.0.0.1:5601```
 
-**_Select "Explore on my own"_**
+Select "Explore on my own"
 
 ![1explore](https://github.com/BwithE/shELK/assets/144924113/415cc467-138f-4b79-b4f6-c853296ef53d)
 
