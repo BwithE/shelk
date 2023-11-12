@@ -96,7 +96,7 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
 
 
     wget https://raw.githubusercontent.com/BwithE/Nmap-XML-to-CSV/master/xml2csv.py 
-    mv xm2csv.py /home/kali/shelk/Scripts/
+    mv xml2csv.py /home/kali/shelk/Scripts/
     
 else
     echo "Filebeat is not installed."
