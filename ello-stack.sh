@@ -99,7 +99,10 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     mv xml2csv.py /home/kali/shelk/Scripts/
 
 # export kibana index-patterns
-#curl -X POST "127.0.0.1:5601/api/saved_objects/_export" -H "kbn-xsrf: true" -H "Content-Type: application/json" --data '{"objects":[{"type":"index-pattern","id":"local-nmap"}]}' --output export.ndjson
+#curl -X POST "127.0.0.1:5601/api/saved_objects/_export" -H "kbn-xsrf: true" -H "Content-Type: application/json" --data '{"objects":[{"type":"index-pattern","id":"local-nmap"}]}' --output local-nmap.ndjson
+# import kibana index-patterns
+# curl -X POST "127.0.0.1:5601/api/saved_objects/_import" -H "kbn-xsrf: true" -H "Content-Type: multipart/form-data" -F file=@local-nmap.ndjson
+
     
 else
     echo "Filebeat is not installed."
