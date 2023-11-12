@@ -1,0 +1,2 @@
+{"attributes":{"fieldAttrs":"{}","fields":"[]","runtimeFieldMap":"{}","timeFieldName":"@timestamp","title":"local-nmap*","typeMeta":"{}"},"coreMigrationVersion":"7.17.9","id":"8ac1a130-81c5-11ee-92c4-59cd8ecc7e8b","migrationVersion":{"index-pattern":"7.11.0"},"references":[],"type":"index-pattern","updated_at":"2023-11-13T01:39:53.155Z","version":"WzkyLDFd"}
+{"excludedObjects":[],"excludedObjectsCount":0,"exportedCount":1,"missingRefCount":0,"missingReferences":[]}
