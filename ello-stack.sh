@@ -109,4 +109,6 @@ else
 fi
 
 clear
+echo ""
 echo "Please open your browser and go to 127.0.0.1:5601"
+echo ""
