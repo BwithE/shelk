@@ -13,7 +13,7 @@ It will copy the modified **_"Filebeat.service"_** files for the different data 
 
 After, another script gets called to create the proper pipelines for the data sets.
 
-Based off the data sets that are injested, you can also use my pre=built **_Index Patterns_**.
+Based off the data sets that are injested, you can also use my pre-built **_Index Patterns_**.
 
 Lastly, it will copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```.
 
