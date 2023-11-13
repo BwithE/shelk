@@ -3,17 +3,18 @@ We will be able to injest and visualize nmap scans, breakdown wireless beacons a
 
 The bash script ```ello-stack.sh``` will install Elasticsearch, Kibana and Filebeat on a **_PRE-BUILT KALI VM_**. 
 
-The user name all the scripts use are ```kali``` and the location of all files and directories are ```/home/kali```
+The user name all the scripts use are ```kali``` and the location of all files and directories are ```/home/kali```.
 
-It also creates the proper **_"log"_** and **_"lib"_** directories for the **_"Filebeat.services"_**.
+It creates the proper **_"log"_** and **_"lib"_** directories for the **_"Filebeat.services"_**.
 
-Then it copies the modified **_"Filebeat.service"_** which splits into different services based off of data types.
+It then copies the modified **_"Filebeat.service"_** which splits into different services based off of data types.
 
-Another script gets called to create the proper pipelines for the data sets.
+After, another script gets called to create the proper pipelines for the data sets.
 
-Then we copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```
+Based off the data sets that are injested, you can also use my pre=built **_Index Patterns_**.
 
-FINALLY, we will injest an nmap scan into Elasticsearch to create dashboards in Kibana.
+Lastly, it will copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```.
+
 
 # Hands on Keyboards: 
 Create a local copy of the script.
