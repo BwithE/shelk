@@ -31,7 +31,7 @@ Then run the script:
 
 ```sudo ./ello-stack.sh``` **_or_** ```sudo bash ello-stack.sh```
 
-Once the script is finishing running, you will be asked to open your web-browser and go to ```127.0.0.1:5601```
+Once the script is finished running, you will be asked to open your web-browser and go to ```127.0.0.1:5601```
 
 Select **_"Explore on my own"_**
 
