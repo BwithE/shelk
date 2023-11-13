@@ -82,9 +82,10 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
 
     # Starts the beat services
     sudo systemctl start nmapbeat.service
-    #sudo systemctl start apbeat.service
+    sudo systemctl start apbeat.service
+    sudo systemctl start clientbeat.service
     #sudo systemctl start arpbeat.service
-    #sudo systemctl start clientbeat.service
+    
 
     # Enables the listed services
     sudo systemctl enable elasticsearch
