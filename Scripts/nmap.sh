@@ -1,5 +1,6 @@
 #!/bin/bash
 # This script runs an nmap scan, converts all the data so that elasticsearch can injest
+# It will check versions on all open ports
 
 read -p "What IP/IP's would you like to scan? (ex: 127.0.0.1 or 192.168.1.1/24): " ip
 
