@@ -1,7 +1,7 @@
 # Using ELK for Network analysis.
 We will be able to injest and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
 
-The bash script ```ello-stack.sh``` will install Elasticsearch, Kibana and Filebeat on a NEW Debian based OS (PREFERABLY KALI). 
+The bash script ```ello-stack.sh``` will install Elasticsearch, Kibana and Filebeat on a **_PRE-BUILT KALI VM_**. 
 
 The user name all the scripts use are ```kali``` and the location of all files and directories are ```/home/kali```
 
