@@ -1,0 +1,2 @@
+{"attributes":{"fieldAttrs":"{}","fields":"[]","runtimeFieldMap":"{}","timeFieldName":"@timestamp","title":"local-clients","typeMeta":"{}"},"coreMigrationVersion":"7.17.9","id":"77ff5890-827d-11ee-bdba-112dcd346d6f","migrationVersion":{"index-pattern":"7.11.0"},"references":[],"type":"index-pattern","updated_at":"2023-11-13T23:36:29.081Z","version":"WzEyNSwxXQ=="}
+{"excludedObjects":[],"excludedObjectsCount":0,"exportedCount":1,"missingRefCount":0,"missingReferences":[]}
