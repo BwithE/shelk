@@ -73,4 +73,6 @@ Open the hamburger menu again and select **_"Discover"._**
 
 FINALLY, We are succesful and can see our recent nmap scan results. On the left column, you can select specifc **_"Fields"_** and you will be able to search through the data in a cleaner, faster manner.
 
+![Screenshot (45)](https://github.com/BwithE/shELK/assets/144924113/c6c82f77-3ed1-456f-bd92-e8a3267b6f44)
+
 # I WILL UPLOAD MORE SNAPSHOTS AS I UPDATE THE DATA SETS AND SCRIPTS #
