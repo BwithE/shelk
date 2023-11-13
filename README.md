@@ -21,7 +21,7 @@ Lastly, it will copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/``
 # Hands on Keyboards: 
 Create a local copy of the script.
 
-```git clone https://github.com/bwithe/shELK```
+```git clone https://github.com/bwithe/shelk```
 
 Make the script executable:
 
