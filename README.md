@@ -1,5 +1,6 @@
 # Using ELK for Network analysis.
 ** ALL FOR TRAINING PURPOSES **
+
 We will be able to injest and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
 
 The bash script ```ello-stack.sh``` will install Elasticsearch, Kibana and Filebeat on a **_PRE-BUILT KALI VM_**. 
@@ -8,7 +9,7 @@ The user name all the scripts use are ```kali``` and the location of all files a
 
 It creates the proper **_"log"_** and **_"lib"_** directories for the **_"Filebeat.services"_**.
 
-It then copies the modified **_"Filebeat.service"_** which splits into different services based off of data types.
+It will copy the modified **_"Filebeat.service"_** files for the different data types.
 
 After, another script gets called to create the proper pipelines for the data sets.
 
