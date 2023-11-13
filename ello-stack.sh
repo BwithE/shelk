@@ -75,8 +75,8 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     mkdir /home/kali/elk/
     mkdir /home/kali/elk/nmap
     mkdir /home/kali/elk/arp
-    mkdir /home/kali/elk/ap
-    mkdir /home/kali/elk/client
+    mkdir /home/kali/elk/aps
+    mkdir /home/kali/elk/clients
     sudo chown kali:kali /home/kali/elk
     sudo chown kali:kali /home/kali/elk/*
 
