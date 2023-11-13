@@ -1,7 +1,7 @@
 #!/bin/bash
 # This script runs an nmap scan, converts all the data so that elasticsearch can injest
 
-read -p "What IP/IP's would you like to scan? (ex: 127.0.0.1 or 192.168.1.1/24) " ip
+read -p "What IP/IP's would you like to scan? (ex: 127.0.0.1 or 192.168.1.1/24): " ip
 
 #nmap scan
 nmap $ip -sV -Pn -n -p- --open -oX scan
