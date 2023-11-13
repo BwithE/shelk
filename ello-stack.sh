@@ -1,4 +1,5 @@
 #!/bin/bash
+
 clear
 
 echo "Installing and starting Elasticsearch."
