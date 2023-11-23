@@ -2,10 +2,7 @@ filebeat.inputs:
 - type: log
   paths:
   - '/home/kali/elk/aps/*.csv'
-  exclude_lines: ['^"?BSSID"?,"?First time seen"?,"?Last time seen"?,"?channel"?,"?Speed"?,"?Privacy"?,"?Cipher"?,"?Authentication"?,"?Power"?,"?# beacons"?,"?# IV"?,"?LAN IP"?,"?ID-length"?,"?ESSID"?,"?Key"?']
-
-processors:
-- add_locale: ~
+  exclude_lines: ['^"?BSSID"?,"?channel"?,"?Privacy"?,"?Cipher"?,"?Authentication"?,"?ESSID"?']
 
 output.elasticsearch:
   hosts: ["127.0.0.1:9200"]
