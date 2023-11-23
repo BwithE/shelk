@@ -67,7 +67,9 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     # Creating pipelines for specific data sets
     clear
     echo "Creating Pipelines." 
-    bash Pipelines/*pipeline.sh
+    bash Pipelines/aps-pipeline.sh
+    bash Pipelines/clients-pipeline.sh
+    bash Pipelines/nmap-pipeline.sh
 
     # Moving filebeat conf files
     clear
