@@ -5,7 +5,7 @@
 read -p "What IP/IP's would you like to scan? (ex: 127.0.0.1 or 192.168.1.1/24): " ip
 
 #nmap scan
-nmap $ip -sV -Pn -n -p- --open -oX scan
+nmap $ip -sV -p- --open -oX scan
 
 # runs python script that converts nmap.xml into a csv
 python3 xml2csv.py -f scan -csv scans.csv
