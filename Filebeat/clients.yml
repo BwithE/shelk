@@ -2,12 +2,9 @@ filebeat.inputs:
 - type: log
   paths:
   - '/home/kali/elk/clients/*.csv'
-  exclude_lines: ['^"?Client MAC"?,"?First time seen"?,"?Last time seen"?,"?Power"?,"?# packets"?,"?BSSID"?,"?ESSID"?']
+  exclude_lines: ['^"?Client MAC"?,"?BSSID"?,"?ESSID"?']
 
-processors:
-- add_locale: ~
-
-output.elasticsearch:
+output.elasticsearch:    
   hosts: ["127.0.0.1:9200"]
   index: "local-clients"
   pipeline: "local-clients-pipeline"
@@ -16,4 +13,4 @@ setup:
   template.enabled: false
   ilm.enabled: false
   template.name: "local-clients"
-  template.pattern: "local-aps-clients"
+  template.pattern: "local-clients-pipeline"
