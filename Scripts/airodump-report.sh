@@ -18,7 +18,7 @@ clear
 sudo airmon-ng start wlan0
 
 # This section start the Airodump collection
-sudo airodump-ng -w ApCap wlan0mon --output-format csv &
+sudo airodump-ng -w ApCap wlan0mon --band abg --output-format csv &
 
 # This allows airodump to run for the time alloted below
 clear
