@@ -51,14 +51,14 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     # /lib/systemd/system/filebeat.service
 
     # Creates the following directories for the beats we will create
-    sudo mkdir /var/lib/filebeat/arpscan
-    sudo mkdir /var/log/filebeat/arpscan
     sudo mkdir /var/lib/filebeat/aps
     sudo mkdir /var/log/filebeat/aps
     sudo mkdir /var/lib/filebeat/nmap
     sudo mkdir /var/log/filebeat/nmap
     sudo mkdir /var/lib/filebeat/clients
     sudo mkdir /var/log/filebeat/clients
+    sudo mkdir /var/lib/filebeat/arpscan
+    sudo mkdir /var/log/filebeat/arpscan
 
     # move the service beats into the required locations
     sudo cp Services/*.service /lib/systemd/system/
@@ -70,6 +70,7 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     bash Pipelines/aps-pipeline.sh
     bash Pipelines/clients-pipeline.sh
     bash Pipelines/nmap-pipeline.sh
+    #bash Pipelines/arp-pipeline.sh
 
     # Moving filebeat conf files
     clear
@@ -100,11 +101,8 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     sudo systemctl enable clientbeat.service
     #sudo systemctl enable arpbeat.service
 
-
     wget https://raw.githubusercontent.com/BwithE/Nmap-XML-to-CSV/master/xml2csv.py 
     mv xml2csv.py /home/kali/shelk/Scripts/
-
-
 
 # export kibana index-patterns
 #curl -X POST "127.0.0.1:5601/api/saved_objects/_export" -H "kbn-xsrf: true" -H "Content-Type: application/json" --data '{"objects":[{"type":"index-pattern","id":"local-nmap"}]}' --output local-nmap.ndjson
