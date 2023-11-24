@@ -1,4 +1,4 @@
-# Using ELK for Network analysis.
+# Using ELK for Network and Wireless analysis.
 ** FOR TRAINING PURPOSES ONLY **
 
 We will be able to injest and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
