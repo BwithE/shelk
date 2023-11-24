@@ -112,6 +112,9 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
 # import kibana index-patterns
 # can't be imorted until there is data, so the nmap report has to be built first
 #curl -X POST "127.0.0.1:5601/api/saved_objects/_import" -H "kbn-xsrf: true" -H "Content-Type: multipart/form-data" -F file=@Index-Patterns/nmap.ndjson
+
+# Before building all of the saved objects, elastic needs a moment to injest everything
+sleep 15
 curl -X POST "127.0.0.1:5601/api/saved_objects/_import" -H "kbn-xsrf: true" -H "Content-Type: multipart/form-data" -F file=@iqd-masterfile/master.ndjson
 
     
