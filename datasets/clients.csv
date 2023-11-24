@@ -1,7 +1,7 @@
 Client MAC,BSSID,ESSID
 00:DE:AD:BE:EF:00,66:66:66:66:66:66,D00Mburger
 12:12:12:12:12:12,22:22:22:22:22:22,QuickQuiche
-43:43:43:43:43:43,44:44:44:44:44:44,SaladStation
+43:43:43:43:43:43,(not associated) ,BeanedBurritos
 64:54:76:23:87:34,(not associated) ,SlaminSalmon
 64:54:76:23:87:34,(not associated) ,WhiskyWhistle
 64:54:76:23:87:34,(not associated) ,PickledPeppers
