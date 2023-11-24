@@ -15,9 +15,9 @@ It creates the proper **_"log"_** and **_"lib"_** directories for the **_"Filebe
 
 It will copy the modified **_"Filebeat.service"_** files for the different data types.
 
-After, other scripts gets called to create the proper pipelines, ojects, and DASHBOARDS.
+After, other scripts gets called to create the proper pipelines, objects, and DASHBOARDS.
 
-Based off the data sets that are injested, you can also use my pre-built **_Index Patterns_**.
+Based off the data sets that are injested, we will use my pre-built **_Index Patterns, Query Sets, and DASHBOARDS_**.
 
 Lastly, it will copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```.
 
@@ -25,9 +25,9 @@ Lastly, it will copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/``
 # Hands on Keyboards: 
 Create a local copy of the script.
 
-```git clone https://github.com/bwithe/shELK```
+```git clone https://github.com/bwithe/shelk```
 
-!!! MAKE SURE TO CD INTO THE "shELK" DIRECTORY BEFORE RUNNING THE FOLLOWING SCRIPT !!!
+!!! MAKE SURE TO CD INTO THE "shelk" DIRECTORY BEFORE RUNNING THE FOLLOWING SCRIPT !!!
 
 Make the script executable:
 
