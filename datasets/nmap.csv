@@ -1,0 +1,8 @@
+IP,Host,OS,Proto,Port,Service,Product
+127.0.0.1,localhost,,tcp,5601,esmagent,
+127.0.0.1,localhost,,tcp,9200,rtsp,
+127.0.0.1,localhost,,tcp,9300,vrace,
+127.0.0.1,localhost,,tcp,22,ssh,
+192.168.1.45,,,,tcp,80,http,
+192.168.1.45,,,,tcp,443,https,
+192.168.1.45,,,,tcp,21,ftp,
