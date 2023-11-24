@@ -5,4 +5,18 @@ Client MAC,BSSID,ESSID
 64:54:76:23:87:34,(not associated) ,SlaminSalmon
 64:54:76:23:87:34,(not associated) ,WhiskyWhistle
 64:54:76:23:87:34,(not associated) ,PickledPeppers
-02:1A:4F:8E:7B:CD,
+02:1A:4F:8E:7B:CD,00:00:00:00:00:00,WackyWagon
+1C:5A:9E:2B:3D:F0,00:00:00:00:00:00,WackyWagon
+8F:6D:A2:C7:0E:4B,33:33:33:33:33:33,FishFillet
+4B:9C:3E:7A:1F:5D,33:33:33:33:33:33,FishFillet
+AC:2D:8B:6F:0A:E1,55:55:55:55:55:55,BrownBag
+5A:D3:8C:2F:7E:9B,11:11:11:11:11:11,HenrysHotDogs
+3E:1F:B6:0D:9A:4C,11:11:11:11:11:11,HenrysHotDogs
+7C:4A:F9:E2:5B:8D,11:11:11:11:11:11,HenrysHotDogs
+9D:0E:6F:C3:A1:7B,22:22:22:22:22:22,QuickQuiche
+2F:8B:5C:1D:A9:3E,77:77:77:77:77:77,SnackShack
+B8:2F:7A:4D:1E:9C,88:88:88:88:88:88,ChuckleCheese
+6A:C1:3D:F7:8E:0B,88:88:88:88:88:88,ChuckleCheese
+D4:9E:A0:5F:2C:7B,88:88:88:88:88:88,ChuckleCheese
+1F:3B:8C:6D:5A:E9,99:99:99:99:99:99,TacoTornados
+7D:0A:4F:2E:9C:1B,99:99:99:99:99:99,TacoTornados
