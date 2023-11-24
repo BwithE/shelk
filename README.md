@@ -23,7 +23,7 @@ Create a local copy of the script.
 
 ```git clone https://github.com/bwithe/shELK```
 
-!!! MAKE SURE TO CD INTO THE "shELK" DIRECTORY BEFORE RUNNING THE FOLLOWING SCRIPT s!!!
+!!! MAKE SURE TO CD INTO THE "shELK" DIRECTORY BEFORE RUNNING THE FOLLOWING SCRIPT !!!
 
 Make the script executable:
 
