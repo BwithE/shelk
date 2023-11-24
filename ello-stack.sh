@@ -104,6 +104,8 @@ if [ -e /etc/filebeat/filebeat.yml  ]; then
     wget https://raw.githubusercontent.com/BwithE/Nmap-XML-to-CSV/master/xml2csv.py 
     mv xml2csv.py /home/kali/shelk/Scripts/
 
+    cp datasets/aps.csv /home/kali/elk/aps/
+    cp datasets/clients.csv /home/kali/clients/
 # export kibana index-patterns
 #curl -X POST "127.0.0.1:5601/api/saved_objects/_export" -H "kbn-xsrf: true" -H "Content-Type: application/json" --data '{"objects":[{"type":"index-pattern","id":"local-nmap"}]}' --output local-nmap.ndjson
 # import kibana index-patterns
