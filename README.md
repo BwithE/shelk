@@ -23,6 +23,8 @@ Create a local copy of the script.
 
 ```git clone https://github.com/bwithe/shELK```
 
+!!! MAKE SURE TO CD INTO THE "shELK" DIRECTORY BEFORE RUNNING THE FOLLOWING SCRIPT s!!!
+
 Make the script executable:
 
 ```sudo chmod +x ello-stack.sh```
