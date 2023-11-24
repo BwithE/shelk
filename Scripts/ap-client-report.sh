@@ -1,4 +1,5 @@
 #!/bin/bash
+# this script can take an airodump-ng.csv report and split the beacons from the probes
 
 input=ApCap-01.csv
 aps=aps.csv
