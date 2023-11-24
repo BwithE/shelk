@@ -7,5 +7,5 @@ BSSID,channel,Privacy,Cipher,Authentication,ESSID
 55:55:55:55:55:55,78,OPN,,,BrownBag
 66:66:66:66:66:66,66,WPA3,CCMP,SAE,D00Mslayer
 77:77:77:77:77:77,83,WPA2,CCMP,PSK,MeeMaws
-88:88:88:88:88:88,94,WPA,,,GeePaw-Shucks
+88:88:88:88:88:88,94,WPA,,,GeePawsChevy
 99:99:99:99:99:99,101,WPA2,CCMP,PSK,Home
