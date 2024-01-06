@@ -1,6 +1,8 @@
 # Using ELK for Network and Wireless analysis.
 ![dashboard](https://github.com/BwithE/shELK/assets/144924113/d7805792-36ef-4e73-a5f6-c7bbc55c57f0)
 
+![nmap](https://github.com/BwithE/shelk/assets/144924113/dc5431c1-3f7a-40a7-ad54-3851200e3236)
+
 ** FOR TRAINING PURPOSES ONLY **
 
 We will be able to injest and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
