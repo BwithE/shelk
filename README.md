@@ -21,7 +21,7 @@ It will copy the modified **_"Filebeat.service"_** files for the different data 
 
 After, other scripts gets called to create the proper pipelines, objects, and DASHBOARDS.
 
-Based off the data sets that are **_INDEXed"_**, we will use my pre-built **_Index Patterns, Query Sets, and DASHBOARDS_**.
+Based off the data sets that are **_indexed_**, we will use my pre-built **_Index Patterns, Query Sets, and DASHBOARDS_**.
 
 Lastly, it will copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```.
 
