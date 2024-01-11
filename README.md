@@ -7,7 +7,7 @@
 
 ** FOR TRAINING PURPOSES ONLY **
 
-We will be able to injest and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
+We will be able to index and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
 
 I've attached some example data for this install. There are scripts to automate the network and wireless collection if needed.
 
