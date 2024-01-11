@@ -2,7 +2,7 @@
 
 # Wireless dashboard #
 ![dashboard](https://github.com/BwithE/shELK/assets/144924113/d7805792-36ef-4e73-a5f6-c7bbc55c57f0)
-# NMAP dashboard #
+# Network dashboard #
 ![nmap](https://github.com/BwithE/shelk/assets/144924113/dc5431c1-3f7a-40a7-ad54-3851200e3236)
 
 ** FOR TRAINING PURPOSES ONLY **
