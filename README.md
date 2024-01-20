@@ -5,6 +5,8 @@
 # Network dashboard #
 ![nmap](https://github.com/BwithE/shelk/assets/144924113/dc5431c1-3f7a-40a7-ad54-3851200e3236)
 
+# Process Overview:
+
 This Bash script is designed to automate the installation and configuration of the Elasticsearch, Kibana, and Filebeat components for managing and analyzing log data.
 
 Here's a breakdown of what each section of the script does:
@@ -46,6 +48,7 @@ Here's a breakdown of what each section of the script does:
 
 Note: The script also includes commented-out sections related to exporting and importing Kibana index patterns, as well as a sleep delay before importing saved objects to allow Elastic time to ingest data.
 
+# Usage:
 ** FOR TRAINING PURPOSES ONLY **
 
 We will be able to **_index_** and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
