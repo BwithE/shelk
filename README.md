@@ -5,6 +5,47 @@
 # Network dashboard #
 ![nmap](https://github.com/BwithE/shelk/assets/144924113/dc5431c1-3f7a-40a7-ad54-3851200e3236)
 
+This Bash script is designed to automate the installation and configuration of the Elasticsearch, Kibana, and Filebeat components for managing and analyzing log data.
+
+Here's a breakdown of what each section of the script does:
+
+1. **Elasticsearch Installation:**
+   - Downloads Elasticsearch package (version 7.17.9) for AMD64 architecture.
+   - Installs Elasticsearch using dpkg.
+   - Reloads the systemd daemon and starts the Elasticsearch service.
+
+2. **Kibana Installation:**
+   - Downloads Kibana package (version 7.17.9) for AMD64 architecture.
+   - Installs Kibana using dpkg.
+   - Starts the Kibana service.
+
+3. **Filebeat Installation:**
+   - Downloads Filebeat package (version 7.17.9) for AMD64 architecture.
+   - Installs Filebeat using dpkg.
+
+4. **Check Elasticsearch and Kibana Status:**
+   - Checks if Elasticsearch is running on the default settings (http://127.0.0.1:9200) and prints the status.
+   - Checks if Kibana is running on the default settings (http://127.0.0.1:5601) and prints the status.
+
+5. **Filebeat Configuration and Service Setup:**
+   - Checks if Filebeat is installed.
+   - If Filebeat is installed, it performs the following tasks:
+      - Creates specific directories for various log data sets.
+      - Copies service files to the required systemd locations.
+      - Reloads systemd daemon.
+      - Creates pipelines for specific data sets.
+      - Moves Filebeat configuration files.
+      - Creates directories for storing data forwarded to ELK stack.
+      - Starts Filebeat services for different data sets.
+      - Enables the listed services.
+      - Downloads a Python script for converting Nmap XML to CSV.
+      - Copies CSV datasets to specific directories.
+
+6. **Final Message:**
+   - Displays a message instructing the user to open their browser and go to http://127.0.0.1:5601 to access Kibana.
+
+Note: The script also includes commented-out sections related to exporting and importing Kibana index patterns, as well as a sleep delay before importing saved objects to allow Elastic time to ingest data.
+
 ** FOR TRAINING PURPOSES ONLY **
 
 We will be able to **_index_** and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
