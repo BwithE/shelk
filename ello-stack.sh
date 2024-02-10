@@ -1,6 +1,14 @@
 #!/bin/bash
 
 clear
+# Checks to verify that the script is running as root
+if [[ $EUID -ne 0 ]]; then
+   echo "THIS SCRIPT NEEDS TO BE RUN AS ROOT."
+   echo "EX: sudo bash shelk.sh"
+   exit 1
+fi
+
+clear
 
 # installs elasticsearch
 echo "Installing and starting Elasticsearch."
