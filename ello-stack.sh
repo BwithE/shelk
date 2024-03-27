@@ -9,9 +9,6 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 clear
-clear
-clear
-clear
 
 # installs elasticsearch
 echo "Installing and starting Elasticsearch."
