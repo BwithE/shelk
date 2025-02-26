@@ -48,7 +48,7 @@ Here's a breakdown of what each section of the script does:
 
 Note: The script also includes commented-out sections related to exporting and importing Kibana index patterns, as well as a sleep delay before importing saved objects to allow Elastic time to ingest data.
 
-# Usage:
+# Description:
 ** FOR TRAINING PURPOSES ONLY **
 
 We will be able to **_index_** and visualize nmap scans, breakdown wireless beacons and probes, and find vendors based off of OUI data sets.
@@ -70,16 +70,20 @@ Based off the data sets that are **_indexed_**, we will use my pre-built **_Inde
 Lastly, it will copy all the **_"filebeat conf files"_**  to ```/etc/filebeat/```.
 
 
-# Hands on Keyboards: 
+# Usage: 
 Create a local copy of the script.
 
-```git clone https://github.com/bwithe/shelk```
+```
+git clone https://github.com/bwithe/shelk
+```
 
 !!! MAKE SURE TO CD INTO THE "shelk" DIRECTORY BEFORE RUNNING THE FOLLOWING SCRIPT !!!
 
 Make the script executable:
 
-```sudo chmod +x ello-stack.sh```
+```
+sudo chmod +x ello-stack.sh
+```
 
 Then run the script:
 
